@@ -1,14 +1,14 @@
 :root {
-  --bg: #f7efe4;
-  --bg-soft: #fdf8f0;
-  --text: #24171a;
-  --muted: #6d5455;
+  --bg: #ffffff;
+  --bg-soft: #f9f6f1;
+  --text: #201517;
+  --muted: #5b474a;
   --accent: #b33b4f;
-  --accent-deep: #7f2032;
-  --gold: #d7a24b;
-  --panel: rgba(255, 250, 242, 0.72);
-  --border: rgba(36, 23, 26, 0.12);
-  --shadow: 0 24px 60px rgba(93, 44, 52, 0.14);
+  --accent-deep: #861f35;
+  --gold: #c78f39;
+  --panel: rgba(255, 255, 255, 0.92);
+  --border: rgba(36, 23, 26, 0.1);
+  --shadow: 0 20px 48px rgba(78, 34, 42, 0.1);
   --max-width: 1160px;
   --radius: 28px;
 }
@@ -28,9 +28,9 @@ body {
   font-family: "Manrope", sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at top left, rgba(215, 162, 75, 0.2), transparent 28%),
-    radial-gradient(circle at top right, rgba(179, 59, 79, 0.18), transparent 24%),
-    linear-gradient(180deg, #fbf3e8 0%, #f6ecdf 48%, #f2e7d7 100%);
+    radial-gradient(circle at top left, rgba(199, 143, 57, 0.12), transparent 24%),
+    radial-gradient(circle at top right, rgba(179, 59, 79, 0.1), transparent 20%),
+    linear-gradient(180deg, #ffffff 0%, #fdfbf8 52%, #faf6f0 100%);
 }
 
 body::before {
@@ -38,12 +38,12 @@ body::before {
   position: fixed;
   inset: 0;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.22) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.22) 1px, transparent 1px);
+    linear-gradient(rgba(179, 59, 79, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(199, 143, 57, 0.05) 1px, transparent 1px);
   background-size: 36px 36px;
   mask-image: radial-gradient(circle at center, black 42%, transparent 90%);
   pointer-events: none;
-  opacity: 0.45;
+  opacity: 0.28;
 }
 
 .page-shell {
@@ -63,7 +63,7 @@ body::before {
   justify-content: flex-start;
   gap: 1rem;
   padding: 1rem 0;
-  backdrop-filter: blur(18px);
+  backdrop-filter: blur(14px);
 }
 
 .brand {
@@ -299,7 +299,7 @@ p {
   display: grid;
   place-items: center;
   background:
-    linear-gradient(160deg, rgba(179, 59, 79, 0.92), rgba(127, 32, 50, 0.92)),
+    linear-gradient(160deg, rgba(179, 59, 79, 0.9), rgba(134, 31, 53, 0.9)),
     var(--panel);
   color: #fff7f3;
 }

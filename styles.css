@@ -400,7 +400,7 @@ p {
 }
 
 .media-card-video:nth-child(2) img {
-  object-position: center 8%;
+  object-position: center 10%;
 }
 
 .media-copy {
